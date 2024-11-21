@@ -3,6 +3,7 @@ import axios from 'axios';  // Import Axios
 import './App.css';
 import { ProductCard } from './Components/ProductCard';
 import { ProductForm } from './Components/ProductForm';
+import ContactForm from './pages/ContactPage';
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -18,6 +19,7 @@ function App() {
       <ProductCard data={products} />
 
       <ProductForm />
+      {/* <ContactForm/> */}
 
     </div>
   );
